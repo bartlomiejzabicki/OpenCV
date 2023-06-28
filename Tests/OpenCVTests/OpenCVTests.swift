@@ -1,11 +1,11 @@
 import XCTest
-@testable import OpenCV
+import opencv2
 
 final class OpenCVTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(OpenCV().text, "Hello, World!")
+    
+    func testValidImportOfOpenCV() throws {
+        let matrix = Mat(size: .init(width: 2, height: 2), type: 0)
+        XCTAssertEqual(matrix, matrix)
     }
+    
 }
